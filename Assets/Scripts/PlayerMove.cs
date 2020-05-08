@@ -97,6 +97,10 @@ public class PlayerMove : MonoBehaviour
             {
                 player.OpenDoor(target);
             }
+            else if (target.tag == "Stairs")
+            {
+                target.GetComponent<Stairs>().TriggerStair();
+            }
             return true;
         }
         else
