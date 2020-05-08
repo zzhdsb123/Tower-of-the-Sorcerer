@@ -1,43 +1,55 @@
 fileFormatVersion: 2
-guid: 1b167c83fca0fc841935924864062747
+guid: a1aa26b64cd4a83469ca430ddb3939d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 554095250017603562
-    second: Event01-Lava01_0
+      213: -9132965867916485519
+    second: Item01-Gem01_0
   - first:
-      213: 7676004159628092334
-    second: Event01-Lava01_1
+      213: -331778426201805757
+    second: Item01-Gem01_1
   - first:
-      213: -7904508146621752563
-    second: Event01-Lava01_2
+      213: -4531914429379894395
+    second: Item01-Gem01_2
   - first:
-      213: 4020200899282280573
-    second: Event01-Lava01_3
+      213: 7982153556376706225
+    second: Item01-Gem01_3
   - first:
-      213: 7917810266828961884
-    second: Event01-Lava01_4
+      213: -1168369788421548567
+    second: Item01-Gem01_4
   - first:
-      213: 3977979574177294168
-    second: Event01-Lava01_5
+      213: 8845005313407280694
+    second: Item01-Gem01_5
   - first:
-      213: -6568634384883629086
-    second: Event01-Lava01_6
+      213: 6305379105598679452
+    second: Item01-Gem01_6
   - first:
-      213: -4102540978667554362
-    second: Event01-Lava01_7
+      213: 2795377703586869364
+    second: Item01-Gem01_7
   - first:
-      213: -4104461424247541709
-    second: Event01-Lava01_8
+      213: -5949556302825497450
+    second: Item01-Gem01_8
   - first:
-      213: 4437660909849639623
-    second: Event01-Lava01_9
+      213: 4287184038265231007
+    second: Item01-Gem01_9
   - first:
-      213: -1593656725232506829
-    second: Event01-Lava01_10
+      213: 1488684333290911776
+    second: Item01-Gem01_10
   - first:
-      213: 7725247431337796994
-    second: Event01-Lava01_11
+      213: 1179842893507738581
+    second: Item01-Gem01_11
+  - first:
+      213: 6769166491180342182
+    second: Item01-Gem01_12
+  - first:
+      213: 3455887446448230258
+    second: Item01-Gem01_13
+  - first:
+      213: -2691101676340926374
+    second: Item01-Gem01_14
+  - first:
+      213: -7503308299554212799
+    second: Item01-Gem01_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,9 +82,9 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -100,7 +112,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,7 +124,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Event01-Lava01_0
+      name: Item01-Gem01_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +143,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aefc705b1ba80b700800000000000000
-      internalID: 554095250017603562
+      spriteID: 17c12118eef214180800000000000000
+      internalID: -9132965867916485519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_1
+      name: Item01-Gem01_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,20 +164,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea3ad0d2d15a68a60800000000000000
-      internalID: 7676004159628092334
+      spriteID: 34c6a1a7749456bf0800000000000000
+      internalID: -331778426201805757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_2
+      name: Item01-Gem01_2
       rect:
         serializedVersion: 2
         x: 64
@@ -173,20 +185,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0bdd6478bb8d4290800000000000000
-      internalID: -7904508146621752563
+      spriteID: 583285c66d76b11c0800000000000000
+      internalID: -4531914429379894395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_3
+      name: Item01-Gem01_3
       rect:
         serializedVersion: 2
         x: 96
@@ -194,20 +206,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d702d6ffa6f9ac730800000000000000
-      internalID: 4020200899282280573
+      spriteID: 1bc54764e5e46ce60800000000000000
+      internalID: 7982153556376706225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_4
+      name: Item01-Gem01_4
       rect:
         serializedVersion: 2
         x: 0
@@ -215,20 +227,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c58f741cc76b1ed60800000000000000
-      internalID: 7917810266828961884
+      spriteID: 9e5d5d22edd19cfe0800000000000000
+      internalID: -1168369788421548567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_5
+      name: Item01-Gem01_5
       rect:
         serializedVersion: 2
         x: 32
@@ -236,20 +248,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 857e892b85f943730800000000000000
-      internalID: 3977979574177294168
+      spriteID: 636651e3875cfba70800000000000000
+      internalID: 8845005313407280694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_6
+      name: Item01-Gem01_6
       rect:
         serializedVersion: 2
         x: 64
@@ -257,20 +269,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e3489d34d587d4a0800000000000000
-      internalID: -6568634384883629086
+      spriteID: c992163a3e4318750800000000000000
+      internalID: 6305379105598679452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_7
+      name: Item01-Gem01_7
       rect:
         serializedVersion: 2
         x: 96
@@ -278,20 +290,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c9790257b8d017c0800000000000000
-      internalID: -4102540978667554362
+      spriteID: 470b75bf53d2bc620800000000000000
+      internalID: 2795377703586869364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_8
+      name: Item01-Gem01_8
       rect:
         serializedVersion: 2
         x: 0
@@ -299,20 +311,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3307e6db4160a07c0800000000000000
-      internalID: -4104461424247541709
+      spriteID: 69c56ee801eee6da0800000000000000
+      internalID: -5949556302825497450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_9
+      name: Item01-Gem01_9
       rect:
         serializedVersion: 2
         x: 32
@@ -320,20 +332,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ca7935f51db59d30800000000000000
-      internalID: 4437660909849639623
+      spriteID: f9616871b232f7b30800000000000000
+      internalID: 4287184038265231007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_10
+      name: Item01-Gem01_10
       rect:
         serializedVersion: 2
         x: 64
@@ -341,20 +353,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 338aa96e6a132e9e0800000000000000
-      internalID: -1593656725232506829
+      spriteID: 0287e74838ed8a410800000000000000
+      internalID: 1488684333290911776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_11
+      name: Item01-Gem01_11
       rect:
         serializedVersion: 2
         x: 96
@@ -362,14 +374,98 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28563e2db97953b60800000000000000
-      internalID: 7725247431337796994
+      spriteID: 5db3c4e4cd4af5010800000000000000
+      internalID: 1179842893507738581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item01-Gem01_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab18442f09e0fd50800000000000000
+      internalID: 6769166491180342182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item01-Gem01_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f474d8257c5ff20800000000000000
+      internalID: 3455887446448230258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item01-Gem01_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58ad3f884947aad0800000000000000
+      internalID: -2691101676340926374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item01-Gem01_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144b4d41bd4eed790800000000000000
+      internalID: -7503308299554212799
       vertices: []
       indices: 
       edges: []

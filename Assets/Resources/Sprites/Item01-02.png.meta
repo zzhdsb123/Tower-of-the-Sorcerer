@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 1b167c83fca0fc841935924864062747
+guid: 27c0362869456f44898239eba64e1518
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 554095250017603562
-    second: Event01-Lava01_0
+      213: 7698565977585050657
+    second: Item01-02_0
   - first:
-      213: 7676004159628092334
-    second: Event01-Lava01_1
+      213: 7081436988876326170
+    second: Item01-02_1
   - first:
-      213: -7904508146621752563
-    second: Event01-Lava01_2
+      213: 851263614539300213
+    second: Item01-02_2
   - first:
-      213: 4020200899282280573
-    second: Event01-Lava01_3
+      213: -879610560447534420
+    second: Item01-02_3
   - first:
-      213: 7917810266828961884
-    second: Event01-Lava01_4
+      213: 6953410305505010429
+    second: Item01-02_4
   - first:
-      213: 3977979574177294168
-    second: Event01-Lava01_5
+      213: -6645817937045693116
+    second: Item01-02_5
   - first:
-      213: -6568634384883629086
-    second: Event01-Lava01_6
+      213: 2268903289499783186
+    second: Item01-02_6
   - first:
-      213: -4102540978667554362
-    second: Event01-Lava01_7
+      213: -3193059973899454416
+    second: Item01-02_7
   - first:
-      213: -4104461424247541709
-    second: Event01-Lava01_8
+      213: 2687007431640808944
+    second: Item01-02_8
   - first:
-      213: 4437660909849639623
-    second: Event01-Lava01_9
+      213: 5641739227412673255
+    second: Item01-02_9
   - first:
-      213: -1593656725232506829
-    second: Event01-Lava01_10
+      213: -4096297365700803465
+    second: Item01-02_10
   - first:
-      213: 7725247431337796994
-    second: Event01-Lava01_11
+      213: -1089022105298803667
+    second: Item01-02_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,9 +70,9 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -100,7 +100,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,7 +112,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Event01-Lava01_0
+      name: Item01-02_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aefc705b1ba80b700800000000000000
-      internalID: 554095250017603562
+      spriteID: 1246dd5c7fcc6da60800000000000000
+      internalID: 7698565977585050657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_1
+      name: Item01-02_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,20 +152,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea3ad0d2d15a68a60800000000000000
-      internalID: 7676004159628092334
+      spriteID: a15094d1c61564260800000000000000
+      internalID: 7081436988876326170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_2
+      name: Item01-02_2
       rect:
         serializedVersion: 2
         x: 64
@@ -173,20 +173,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0bdd6478bb8d4290800000000000000
-      internalID: -7904508146621752563
+      spriteID: 57d74da4fbb40db00800000000000000
+      internalID: 851263614539300213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_3
+      name: Item01-02_3
       rect:
         serializedVersion: 2
         x: 96
@@ -194,20 +194,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d702d6ffa6f9ac730800000000000000
-      internalID: 4020200899282280573
+      spriteID: caaa7db0bdefac3f0800000000000000
+      internalID: -879610560447534420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_4
+      name: Item01-02_4
       rect:
         serializedVersion: 2
         x: 0
@@ -215,20 +215,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c58f741cc76b1ed60800000000000000
-      internalID: 7917810266828961884
+      spriteID: df2aa2505d97f7060800000000000000
+      internalID: 6953410305505010429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_5
+      name: Item01-02_5
       rect:
         serializedVersion: 2
         x: 32
@@ -236,20 +236,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 857e892b85f943730800000000000000
-      internalID: 3977979574177294168
+      spriteID: 44dd87c1ccf45c3a0800000000000000
+      internalID: -6645817937045693116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_6
+      name: Item01-02_6
       rect:
         serializedVersion: 2
         x: 64
@@ -257,20 +257,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e3489d34d587d4a0800000000000000
-      internalID: -6568634384883629086
+      spriteID: 21099584583cc7f10800000000000000
+      internalID: 2268903289499783186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_7
+      name: Item01-02_7
       rect:
         serializedVersion: 2
         x: 96
@@ -278,20 +278,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c9790257b8d017c0800000000000000
-      internalID: -4102540978667554362
+      spriteID: 038743d0fd8ffa3d0800000000000000
+      internalID: -3193059973899454416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_8
+      name: Item01-02_8
       rect:
         serializedVersion: 2
         x: 0
@@ -299,20 +299,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3307e6db4160a07c0800000000000000
-      internalID: -4104461424247541709
+      spriteID: 0fdf8cfc50b2a4520800000000000000
+      internalID: 2687007431640808944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_9
+      name: Item01-02_9
       rect:
         serializedVersion: 2
         x: 32
@@ -320,20 +320,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ca7935f51db59d30800000000000000
-      internalID: 4437660909849639623
+      spriteID: 7e2b155afeb7b4e40800000000000000
+      internalID: 5641739227412673255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_10
+      name: Item01-02_10
       rect:
         serializedVersion: 2
         x: 64
@@ -341,20 +341,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 338aa96e6a132e9e0800000000000000
-      internalID: -1593656725232506829
+      spriteID: 774090fbf370727c0800000000000000
+      internalID: -4096297365700803465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event01-Lava01_11
+      name: Item01-02_11
       rect:
         serializedVersion: 2
         x: 96
@@ -362,14 +362,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28563e2db97953b60800000000000000
-      internalID: 7725247431337796994
+      spriteID: d24ed154a2403e0f0800000000000000
+      internalID: -1089022105298803667
       vertices: []
       indices: 
       edges: []

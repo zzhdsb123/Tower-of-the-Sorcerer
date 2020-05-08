@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8408318117170471035}
   - component: {fileID: 8408318117170471036}
   - component: {fileID: 8408318117170471037}
-  - component: {fileID: 8408318117170471034}
   - component: {fileID: 8408318117170471033}
+  - component: {fileID: 963835045525912891}
   m_Layer: 8
   m_Name: doorYellow
-  m_TagString: Door
+  m_TagString: Objects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,19 +103,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8408318117170471034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8408318117170471038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b73619e7f9cda34fb922cc5f76c80c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: yellow
 --- !u!61 &8408318117170471033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,3 +129,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &963835045525912891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408318117170471038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbedcf724c4f2f4d829cd71a724ec8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

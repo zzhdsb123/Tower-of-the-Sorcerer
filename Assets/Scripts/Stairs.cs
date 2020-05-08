@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stairs : MonoBehaviour
+public class Stairs : MonoBehaviour, Objects
 {
     public string direction;
-    // Start is called before the first frame update
-    public void TriggerStair()
+
+    public void Trigger()
     {
         if (direction == "up")
         {
@@ -16,6 +16,5 @@ public class Stairs : MonoBehaviour
         {
             FindObjectOfType<LevelController>().PreviousLevel();
         }
-        
     }
 }

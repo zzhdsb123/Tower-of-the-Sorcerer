@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2682129563490927372}
   - component: {fileID: 2682129563490927379}
   - component: {fileID: 2682129563490927378}
-  - component: {fileID: -1968638486076513764}
+  - component: {fileID: -8597182610463508777}
   m_Layer: 8
   m_Name: stairsUp
-  m_TagString: Untagged
+  m_TagString: Objects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &-1968638486076513764
+--- !u!114 &-8597182610463508777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +119,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2682129563490927377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 945f5e2d86e40984793921b893002f79, type: 3}
+  m_Script: {fileID: 11500000, guid: bf87af9ba1a19f240990e1d9fb4d4795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: up

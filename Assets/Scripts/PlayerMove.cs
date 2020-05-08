@@ -93,13 +93,10 @@ public class PlayerMove : MonoBehaviour
         if (raycastHit2D.collider != null)
         {
             GameObject target = raycastHit2D.collider.gameObject;
-            if (target.tag == "Door")
+            if (target.tag == "Objects")
             {
-                player.OpenDoor(target);
-            }
-            else if (target.tag == "Stairs")
-            {
-                target.GetComponent<Stairs>().TriggerStair();
+                Debug.Log("cao");
+                target.GetComponent<Objects>().Trigger();
             }
             return true;
         }
