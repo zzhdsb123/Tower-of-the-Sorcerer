@@ -9,6 +9,8 @@ TagManager:
   - Background
   - Level
   - Stairs
+  - Objects
+  - Monster
   layers:
   - Default
   - TransparentFX

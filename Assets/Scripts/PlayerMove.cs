@@ -95,8 +95,11 @@ public class PlayerMove : MonoBehaviour
             GameObject target = raycastHit2D.collider.gameObject;
             if (target.tag == "Objects")
             {
-                Debug.Log("cao");
                 target.GetComponent<Objects>().Trigger();
+            }
+            else if (target.tag == "Monster")
+            {
+                target.GetComponent<Monster>().Trigger();
             }
             return true;
         }
