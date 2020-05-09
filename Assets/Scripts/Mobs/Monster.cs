@@ -2,7 +2,7 @@
 
 public class Monster : MonoBehaviour
 {
-    protected int health, attack, defence, gold, exp;
+    public int health, attack, defence, gold, exp;
     float timeBetweenAttack = 0.3f;
     bool attackTurn = true;
     Player player;

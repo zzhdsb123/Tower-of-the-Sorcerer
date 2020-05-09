@@ -23503,6 +23503,7 @@ MonoBehaviour:
   boxCollider2D: {fileID: 1446351610}
   player: {fileID: 1446351611}
   animator: {fileID: 1446351612}
+  mobDictionary: 0
 --- !u!61 &1446351610
 BoxCollider2D:
   m_ObjectHideFlags: 0

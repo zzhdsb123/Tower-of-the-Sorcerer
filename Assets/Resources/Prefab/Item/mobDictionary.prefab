@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1223788558280203487}
   - component: {fileID: 4488618391116673176}
   - component: {fileID: 5789320254771904168}
+  - component: {fileID: 1829761123}
   m_Layer: 8
   m_Name: mobDictionary
   m_TagString: Objects
@@ -109,3 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &1829761123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974741297949716708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2508f5e7e9f17234d8456d0bc4f09207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

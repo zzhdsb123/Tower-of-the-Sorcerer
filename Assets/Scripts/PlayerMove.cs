@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -7,6 +8,7 @@ public class PlayerMove : MonoBehaviour
     public BoxCollider2D boxCollider2D;
     public Player player;
     public Animator animator;
+    public bool mobDictionary = false;
     
     // Start is called before the first frame update
     void Update()
