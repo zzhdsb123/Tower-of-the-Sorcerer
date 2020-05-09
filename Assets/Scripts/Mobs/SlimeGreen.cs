@@ -7,5 +7,7 @@ public class SlimeGreen : Monster
         health = 50;
         attack = 20;
         defence = 1;
+        gold = 1;
+        exp = 1;
     }
 }

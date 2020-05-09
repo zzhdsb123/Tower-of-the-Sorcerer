@@ -2,7 +2,7 @@
 
 public class Monster : MonoBehaviour
 {
-    protected int health, attack, defence;
+    protected int health, attack, defence, gold, exp;
     float timeBetweenAttack = 0.3f;
     bool attackTurn = true;
     Player player;
@@ -14,7 +14,8 @@ public class Monster : MonoBehaviour
         if (AllowCombat())
         {
             combatAnimation = Resources.Load<GameObject>("Prefab/Static/fight");
-            Debug.Log(combatAnimation);
+            FindObjectOfType<MobUI>().PlaceMobIcon(this.gameObject);
+            FindObjectOfType<PlayerMove>().enabled = false;
             Fight();
         }
     }
@@ -48,6 +49,7 @@ public class Monster : MonoBehaviour
             {
                 health = 0;
             }
+            FindObjectOfType<MobUI>().UpdateMobStats(health, attack, defence);
         }
         else
         {
@@ -94,5 +96,10 @@ public class Monster : MonoBehaviour
     void Die()
     {
         this.gameObject.SetActive(false);
+        FindObjectOfType<PlayerMove>().enabled = true;
+        FindObjectOfType<MobUI>().CombatOver();
+        player.gold += gold;
+        player.exp += exp;
+        player.UpdateStats();
     }
 }
