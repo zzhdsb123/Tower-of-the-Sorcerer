@@ -82,6 +82,7 @@ public class ShowMobDic : MonoBehaviour
                 Destroy(mobstats);
             }
             mobDicUI.SetActive(false);
+            this.GetComponent<LevelController>().currentLevel.SetActive(true);
         }
         
         showingDic = !showingDic;
