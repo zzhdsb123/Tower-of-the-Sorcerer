@@ -24,6 +24,7 @@ public class LevelController : MonoBehaviour
         nextLevel.SetActive(true);
         currentLevel = nextLevel;
         player.transform.position = currentLevel.GetComponent<Level>().positionFromBelow.position;
+        player.GetComponent<Player>().ResetAnimation();
     }
 
     public void PreviousLevel()
@@ -39,5 +40,6 @@ public class LevelController : MonoBehaviour
         prevLevel.SetActive(true);
         currentLevel = prevLevel;
         player.transform.position = currentLevel.GetComponent<Level>().positionFromAbove.position;
+        player.GetComponent<Player>().ResetAnimation();
     }
 }
