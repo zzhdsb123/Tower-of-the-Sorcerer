@@ -44,7 +44,10 @@ public class Monster : MonoBehaviour
         if (attackTurn)
         {
             mobCombat = Instantiate(combatAnimation, transform.position, Quaternion.identity);
-            health -= (player.attack - defence);
+            if (player.attack - defence > 0)
+            {
+                health -= (player.attack - defence);
+            }
             if (health < 0)
             {
                 health = 0;
@@ -54,7 +57,11 @@ public class Monster : MonoBehaviour
         else
         {
             playerCombat = Instantiate(combatAnimation, player.gameObject.transform.position, Quaternion.identity);
-            player.health -= (attack - player.defence);
+            if (attack - player.defence > 0)
+            {
+                player.health -= (attack - player.defence);
+            }
+            
         }
         player.UpdateStats();
         attackTurn = !attackTurn;
