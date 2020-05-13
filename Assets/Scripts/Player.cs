@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         animator = this.GetComponent<Animator>();
+        UpdateStats();
     }
 
 

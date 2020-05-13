@@ -30,8 +30,12 @@ public class ShowMobDic : MonoBehaviour
             {
                 if (!spriteSet.Contains(mob.GetComponent<SpriteRenderer>().sprite))
                 {
-                    spriteSet.Add(mob.GetComponent<SpriteRenderer>().sprite);
-                    mobsToShow.Add(mob);
+                    if (mob.GetComponent<Monster>().health != 0)
+                    {
+                        spriteSet.Add(mob.GetComponent<SpriteRenderer>().sprite);
+                        mobsToShow.Add(mob);
+                    }
+                    
                 }
             }
             Vector3 currentMobPos = mobPos.position;

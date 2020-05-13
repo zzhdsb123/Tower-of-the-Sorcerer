@@ -39,6 +39,7 @@ public class ThirdFloowShopController : ShopGeneral
 
     public void ExitShop()
     {
+        this.gameObject.GetComponent<UnityEngine.UI.Text>().fontSize -= 6;
         PlayerMove playerMove = FindObjectOfType<PlayerMove>();
         playerMove.enabled = true;
         GameObject.Find("Canvas").gameObject.SetActive(false);
