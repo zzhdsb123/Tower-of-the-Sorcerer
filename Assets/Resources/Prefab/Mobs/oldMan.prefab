@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2235850146624556497}
   - component: {fileID: 1185309241492362957}
   m_Layer: 8
-  m_Name: expShop
+  m_Name: oldMan
   m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -146,3 +146,4 @@ MonoBehaviour:
   defence: 0
   gold: 0
   exp: 0
+  initialDamage: 0

@@ -123,6 +123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc5329e62d0c1814cb845c8955d9eabe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  attack: 0
+  defence: 0
+  gold: 0
+  exp: 0
+  initialDamage: 0
 --- !u!95 &6658290068587201530
 Animator:
   serializedVersion: 3

@@ -128,6 +128,7 @@ MonoBehaviour:
   defence: 0
   gold: 0
   exp: 0
+  initialDamage: 0
 --- !u!95 &4247998112114104227
 Animator:
   serializedVersion: 3

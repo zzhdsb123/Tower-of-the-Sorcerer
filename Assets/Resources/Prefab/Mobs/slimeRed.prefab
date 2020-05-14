@@ -142,3 +142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb56c37ea9d01074dbfeeb98540efe05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  attack: 0
+  defence: 0
+  gold: 0
+  exp: 0
+  initialDamage: 0

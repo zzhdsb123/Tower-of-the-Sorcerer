@@ -147,5 +147,6 @@ MonoBehaviour:
   defence: 0
   gold: 0
   exp: 0
+  initialDamage: 0
   canvas: {fileID: 0}
   secondFloorDoor: {fileID: 0}
