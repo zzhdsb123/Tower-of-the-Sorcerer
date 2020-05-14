@@ -3,6 +3,7 @@
 public class Monster : MonoBehaviour
 {
     public int health, attack, defence, gold, exp;
+    public int initialDamage;
     float timeBetweenAttack = 0.3f;
     bool attackTurn = true;
     Player player;
@@ -36,37 +37,51 @@ public class Monster : MonoBehaviour
 
     void Fight()
     {
-        if (health == 0)
+        if (initialDamage > 0)
         {
-            Die();
-            return;
-        }
-        if (attackTurn)
-        {
-            mobCombat = Instantiate(combatAnimation, transform.position, Quaternion.identity);
-            if (player.attack - defence > 0)
-            {
-                health -= (player.attack - defence);
-            }
-            if (health < 0)
-            {
-                health = 0;
-            }
-            FindObjectOfType<MobUI>().UpdateMobStats(health, attack, defence);
+            Debug.Log("?");
+            playerCombat = Instantiate(combatAnimation, player.gameObject.transform.position, Quaternion.identity);
+            player.health -= initialDamage;
+            initialDamage = 0;
+            player.UpdateStats();
+            Invoke("DeleteAnimation", 0.15f);
+            Invoke("Fight", timeBetweenAttack);
         }
         else
         {
-            playerCombat = Instantiate(combatAnimation, player.gameObject.transform.position, Quaternion.identity);
-            if (attack - player.defence > 0)
+            if (health == 0)
             {
-                player.health -= (attack - player.defence);
+                Die();
+                return;
             }
-            
+            if (attackTurn)
+            {
+                mobCombat = Instantiate(combatAnimation, transform.position, Quaternion.identity);
+                if (player.attack - defence > 0)
+                {
+                    health -= (player.attack - defence);
+                }
+                if (health < 0)
+                {
+                    health = 0;
+                }
+                FindObjectOfType<MobUI>().UpdateMobStats(health, attack, defence);
+            }
+            else
+            {
+                playerCombat = Instantiate(combatAnimation, player.gameObject.transform.position, Quaternion.identity);
+                if (attack - player.defence > 0)
+                {
+                    player.health -= (attack - player.defence);
+                }
+
+            }
+            player.UpdateStats();
+            attackTurn = !attackTurn;
+            Invoke("DeleteAnimation", 0.15f);
+            Invoke("Fight", timeBetweenAttack);
         }
-        player.UpdateStats();
-        attackTurn = !attackTurn;
-        Invoke("DeleteAnimation", 0.15f);
-        Invoke("Fight", timeBetweenAttack);
+        
     }
 
     bool AllowCombat()
@@ -77,6 +92,7 @@ public class Monster : MonoBehaviour
         }
         bool turn = true;
         int playerHealth = player.health;
+        playerHealth -= initialDamage;
         int mobHealth = health;
         while (playerHealth > 0)
         {
