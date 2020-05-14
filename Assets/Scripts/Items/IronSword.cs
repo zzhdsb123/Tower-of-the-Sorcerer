@@ -9,7 +9,7 @@ public class IronSword : MonoBehaviour, Objects
     {
         Player player = FindObjectOfType<Player>();
         player.attack += 10;
-        player.UpdateStats();
+        player.UpdateAttack();
         this.gameObject.SetActive(false);
     }
 }

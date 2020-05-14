@@ -6,7 +6,7 @@ public class AttackGem : MonoBehaviour,  Objects
     {
         Player player = FindObjectOfType<Player>();
         player.attack += 3;
-        player.UpdateStats();
+        player.UpdateAttack();
         this.gameObject.SetActive(false);
     }
 }

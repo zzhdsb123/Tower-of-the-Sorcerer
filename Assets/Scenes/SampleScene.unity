@@ -2014,6 +2014,7 @@ GameObject:
   - component: {fileID: 71645239}
   - component: {fileID: 71645238}
   - component: {fileID: 71645237}
+  - component: {fileID: 71645241}
   m_Layer: 0
   m_Name: bluekey
   m_TagString: Untagged
@@ -2206,6 +2207,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &71645241
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71645235}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &71704330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15698,6 +15718,7 @@ GameObject:
   - component: {fileID: 404530299}
   - component: {fileID: 404530298}
   - component: {fileID: 404530297}
+  - component: {fileID: 404530301}
   m_Layer: 0
   m_Name: attack
   m_TagString: Untagged
@@ -15890,6 +15911,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &404530301
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404530295}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &405840866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19130,6 +19170,7 @@ GameObject:
   - component: {fileID: 485656855}
   - component: {fileID: 485656854}
   - component: {fileID: 485656853}
+  - component: {fileID: 485656857}
   m_Layer: 0
   m_Name: gold
   m_TagString: Untagged
@@ -19322,6 +19363,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &485656857
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485656851}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &487468051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26527,6 +26587,7 @@ GameObject:
   - component: {fileID: 702760403}
   - component: {fileID: 702760402}
   - component: {fileID: 702760401}
+  - component: {fileID: 702760405}
   m_Layer: 0
   m_Name: exp
   m_TagString: Untagged
@@ -26719,6 +26780,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &702760405
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702760399}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &703281869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32962,6 +33042,7 @@ GameObject:
   - component: {fileID: 868051311}
   - component: {fileID: 868051310}
   - component: {fileID: 868051309}
+  - component: {fileID: 868051313}
   m_Layer: 0
   m_Name: yellowkey
   m_TagString: Untagged
@@ -33154,6 +33235,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &868051313
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868051307}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &868839703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50303,6 +50403,7 @@ GameObject:
   - component: {fileID: 1289440610}
   - component: {fileID: 1289440609}
   - component: {fileID: 1289440608}
+  - component: {fileID: 1289440612}
   m_Layer: 0
   m_Name: defence
   m_TagString: Untagged
@@ -50495,6 +50596,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &1289440612
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289440606}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1289590133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51573,6 +51693,7 @@ GameObject:
   - component: {fileID: 1324237989}
   - component: {fileID: 1324237988}
   - component: {fileID: 1324237987}
+  - component: {fileID: 1324237991}
   m_Layer: 0
   m_Name: health
   m_TagString: Untagged
@@ -51767,6 +51888,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &1324237991
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324237985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1324312292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4816159332449842113, guid: a99c472f0300a774a82ec70a8b4ad933,
@@ -55994,7 +56134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446351606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.92, y: -0.64, z: 0}
+  m_LocalPosition: {x: -1.92, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56067,7 +56207,7 @@ MonoBehaviour:
   attack: 60
   defence: 60
   gold: 500
-  exp: 100
+  exp: 800
   level: 1
   yellowKey: 99
   blueKey: 99
@@ -69315,6 +69455,7 @@ GameObject:
   - component: {fileID: 1793182159}
   - component: {fileID: 1793182158}
   - component: {fileID: 1793182157}
+  - component: {fileID: 1793182161}
   m_Layer: 0
   m_Name: level
   m_TagString: Untagged
@@ -69507,6 +69648,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &1793182161
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793182155}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1793833295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71551,6 +71711,7 @@ GameObject:
   - component: {fileID: 1835732034}
   - component: {fileID: 1835732033}
   - component: {fileID: 1835732032}
+  - component: {fileID: 1835732036}
   m_Layer: 0
   m_Name: redkey
   m_TagString: Untagged
@@ -71743,6 +71904,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &1835732036
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835732030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6aab1467784d3f49aa350c42dbd9e8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1836310371
 PrefabInstance:
   m_ObjectHideFlags: 0

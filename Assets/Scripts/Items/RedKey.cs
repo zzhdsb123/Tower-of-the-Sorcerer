@@ -6,7 +6,7 @@ public class RedKey : MonoBehaviour, Objects
     {
         Player player = FindObjectOfType<Player>();
         player.redKey += 1;
-        player.UpdateStats();
+        player.UpdateRedKey();
         this.gameObject.SetActive(false);
     }
 

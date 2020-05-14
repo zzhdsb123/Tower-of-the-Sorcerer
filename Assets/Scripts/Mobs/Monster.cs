@@ -107,6 +107,7 @@ public class Monster : MonoBehaviour
         FindObjectOfType<MobUI>().CombatOver();
         player.gold += gold;
         player.exp += exp;
-        player.UpdateStats();
+        player.UpdateExp();
+        player.UpdateGold();
     }
 }

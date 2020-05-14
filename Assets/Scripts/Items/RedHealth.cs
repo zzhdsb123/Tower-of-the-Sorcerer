@@ -8,7 +8,7 @@ public class RedHealth : MonoBehaviour, Objects
     {
         Player player = FindObjectOfType<Player>();
         player.health += 200;
-        player.UpdateStats();
+        player.UpdateHealth();
         this.gameObject.SetActive(false);
     }
 }

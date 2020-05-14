@@ -7,7 +7,7 @@
         {
             player.gold -= 10;
             player.yellowKey += 1;
-            player.UpdateStats();
+            player.UpdateYellowKey();
         }
     }
 
@@ -18,7 +18,7 @@
         {
             player.gold -= 50;
             player.blueKey += 1;
-            player.UpdateStats();
+            player.UpdateBlueKey();
         }
     }
 
@@ -29,7 +29,7 @@
         {
             player.gold -= 100;
             player.redKey += 1;
-            player.UpdateStats();
+            player.UpdateRedKey();
         }
     }
 }

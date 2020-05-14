@@ -15,7 +15,7 @@ public class FifthFloorExpUI : ShopGeneral
             player.attack += 7;
             player.defence += 7;
             player.exp -= 100;
-            player.UpdateStats();
+            player.UpdateLevel();
         }
         
     }
@@ -27,7 +27,7 @@ public class FifthFloorExpUI : ShopGeneral
         {
             player.attack += 5;
             player.exp -= 30;
-            player.UpdateStats();
+            player.UpdateAttack();
         }
     }
 
@@ -38,7 +38,7 @@ public class FifthFloorExpUI : ShopGeneral
         {
             player.defence += 5;
             player.exp -= 30;
-            player.UpdateStats();
+            player.UpdateDefence();
         }
     }
 }

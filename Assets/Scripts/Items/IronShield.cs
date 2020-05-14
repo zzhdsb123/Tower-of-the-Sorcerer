@@ -8,7 +8,7 @@ public class IronShield : MonoBehaviour, Objects
     {
         Player player = FindObjectOfType<Player>();
         player.defence += 10;
-        player.UpdateStats();
+        player.UpdateDefence();
         this.gameObject.SetActive(false);
     }
 

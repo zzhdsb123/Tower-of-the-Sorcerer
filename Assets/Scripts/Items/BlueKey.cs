@@ -6,7 +6,7 @@ public class BlueKey : MonoBehaviour, Objects
     {
         Player player = FindObjectOfType<Player>();
         player.blueKey += 1;
-        player.UpdateStats();
+        player.UpdateBlueKey();
         this.gameObject.SetActive(false);
     }
 }

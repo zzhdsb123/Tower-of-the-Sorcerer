@@ -10,7 +10,9 @@ public class MasterKey : MonoBehaviour, Objects
         player.yellowKey += 1;
         player.blueKey += 1;
         player.redKey += 1;
-        player.UpdateStats();
+        player.UpdateBlueKey();
+        player.UpdateRedKey();
+        player.UpdateYellowKey();
         this.gameObject.SetActive(false);
     }
 

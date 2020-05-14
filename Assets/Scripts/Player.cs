@@ -37,6 +37,62 @@ public class Player : MonoBehaviour
         UpdateStats();
     }
 
+    public void UpdateLevel()
+    {
+        levelText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        healthText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        attackText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        defenceText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
 
+    public void UpdateAttack()
+    {
+        attackText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
+
+    public void UpdateDefence()
+    {
+        defenceText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
+
+    public void UpdateHealth()
+    {
+        healthText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
+
+    public void UpdateBlueKey()
+    {
+        blueKeyText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+
+    }
+
+    public void UpdateYellowKey()
+    {
+        yellowKeyText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
+
+    public void UpdateRedKey()
+    {
+        redKeyText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
+
+    public void UpdateGold()
+    {
+        goldText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
+
+    public void UpdateExp()
+    {
+        expText.gameObject.GetComponent<Animator>().SetTrigger("highlight");
+        UpdateStats();
+    }
 
 }

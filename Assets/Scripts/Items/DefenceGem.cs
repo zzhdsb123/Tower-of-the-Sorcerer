@@ -8,7 +8,7 @@ public class DefenceGem : MonoBehaviour, Objects
     {
         Player player = FindObjectOfType<Player>();
         player.defence += 3;
-        player.UpdateStats();
+        player.UpdateDefence();
         this.gameObject.SetActive(false);
     }
 }

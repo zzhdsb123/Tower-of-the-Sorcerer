@@ -7,7 +7,7 @@ public class YellowKey : MonoBehaviour, Objects
     {
         Player player = FindObjectOfType<Player>();
         player.yellowKey += 1;
-        player.UpdateStats();
+        player.UpdateYellowKey();
         this.gameObject.SetActive(false);
     }
 }
