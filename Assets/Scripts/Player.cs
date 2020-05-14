@@ -6,15 +6,16 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public TextMeshPro healthText, attackText, defenceText, goldText, expText;
+    public TextMeshPro healthText, attackText, defenceText, goldText, expText, levelText;
     public TextMeshPro yellowKeyText, blueKeyText, redKeyText;
-    public int health = 1000, attack = 10, defence = 10, gold = 0, exp = 0;
+    public int health = 1000, attack = 10, defence = 10, gold = 0, exp = 0, level = 1;
     public int yellowKey = 1, blueKey = 1, redKey = 1;
     Animator animator;
     // Start is called before the first frame update
 
     public void UpdateStats()
     {
+        levelText.text = level.ToString();
         healthText.text = health.ToString();
         attackText.text = attack.ToString();
         defenceText.text = defence.ToString();

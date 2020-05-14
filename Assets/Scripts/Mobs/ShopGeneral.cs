@@ -14,4 +14,12 @@ public class ShopGeneral : MonoBehaviour
     {
         this.gameObject.GetComponent<UnityEngine.UI.Text>().fontSize -= 6;
     }
+
+    public void ExitUI()
+    {
+        this.gameObject.GetComponent<UnityEngine.UI.Text>().fontSize -= 6;
+        PlayerMove playerMove = FindObjectOfType<PlayerMove>();
+        playerMove.enabled = true;
+        this.transform.parent.transform.parent.gameObject.SetActive(false);
+    }
 }
