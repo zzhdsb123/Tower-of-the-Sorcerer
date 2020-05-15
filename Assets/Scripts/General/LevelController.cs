@@ -13,6 +13,7 @@ public class LevelController : MonoBehaviour
     public void NextLevel()
     {
         stairs.GetComponent<LevelAnimation>().ChangeLevel();
+        FindObjectOfType<PlayerMove>().enabled = false;
         Invoke("NextLevelHelper", 0.5f);
 
     }
@@ -25,11 +26,13 @@ public class LevelController : MonoBehaviour
         currentLevel = nextLevel;
         player.transform.position = currentLevel.GetComponent<Level>().positionFromBelow.position;
         player.GetComponent<Player>().ResetAnimation();
+        FindObjectOfType<PlayerMove>().enabled = true;
     }
 
     public void PreviousLevel()
     {
         stairs.GetComponent<LevelAnimation>().ChangeLevel();
+        FindObjectOfType<PlayerMove>().enabled = false;
         Invoke("PreviousLevelHelper", 0.5f);
     }
 
@@ -41,5 +44,6 @@ public class LevelController : MonoBehaviour
         currentLevel = prevLevel;
         player.transform.position = currentLevel.GetComponent<Level>().positionFromAbove.position;
         player.GetComponent<Player>().ResetAnimation();
+        FindObjectOfType<PlayerMove>().enabled = true;
     }
 }
