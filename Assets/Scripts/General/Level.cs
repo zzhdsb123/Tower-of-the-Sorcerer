@@ -8,6 +8,7 @@ public class Level : MonoBehaviour
     public GameObject prevousLevel = null;
     public Transform positionFromBelow = null;
     public Transform positionFromAbove = null;
+    public bool visited = false;
 
     // Update is called once per frame
     void Update()

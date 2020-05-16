@@ -24,6 +24,7 @@ public class LevelController : MonoBehaviour
         currentLevel.SetActive(false);
         nextLevel.SetActive(true);
         currentLevel = nextLevel;
+        currentLevel.GetComponent<Level>().visited = true;
         player.transform.position = currentLevel.GetComponent<Level>().positionFromBelow.position;
         player.GetComponent<Player>().ResetAnimation();
         FindObjectOfType<PlayerMove>().enabled = true;
