@@ -7,7 +7,7 @@ public class Sheld11Floor : MonoBehaviour, Objects
     public void Trigger()
     {
         Player player = FindObjectOfType<Player>();
-        player.attack += 70;
+        player.defence += 85;
         player.UpdateAttack();
         this.gameObject.SetActive(false);
     }

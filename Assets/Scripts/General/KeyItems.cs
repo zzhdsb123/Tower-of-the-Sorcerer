@@ -7,4 +7,5 @@ public class KeyItems : MonoBehaviour
     // Start is called before the first frame update
     public bool cross = false;
     public bool floowJump = false;
+    public bool floorTool = false;
 }
