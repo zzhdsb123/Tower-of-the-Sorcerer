@@ -11,7 +11,7 @@ public class ThirdFloowShopController : ShopGeneral
         {
             player.gold -= 25;
             player.health += 800;
-            player.UpdateStats();
+            player.UpdateHealth();
         }
     }
 
@@ -22,7 +22,7 @@ public class ThirdFloowShopController : ShopGeneral
         {
             player.gold -= 25;
             player.attack += 4;
-            player.UpdateStats();
+            player.UpdateAttack();
         }
     }
 
@@ -33,7 +33,7 @@ public class ThirdFloowShopController : ShopGeneral
         {
             player.gold -= 25;
             player.defence += 4;
-            player.UpdateStats();
+            player.UpdateDefence();
         }
     }
 
