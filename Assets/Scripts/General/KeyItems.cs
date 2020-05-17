@@ -8,4 +8,5 @@ public class KeyItems : MonoBehaviour
     public bool cross = false;
     public bool floowJump = false;
     public bool floorTool = false;
+    public bool sealKey1 = false;
 }
