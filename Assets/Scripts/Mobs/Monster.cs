@@ -116,7 +116,7 @@ public class Monster : MonoBehaviour
         return false;
     }
     // Start is called before the first frame update
-    void Die()
+    public virtual void Die()
     {
         this.gameObject.SetActive(false);
         FindObjectOfType<PlayerMove>().enabled = true;
