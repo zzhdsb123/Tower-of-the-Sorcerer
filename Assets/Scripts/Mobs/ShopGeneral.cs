@@ -22,4 +22,5 @@ public class ShopGeneral : MonoBehaviour
         playerMove.enabled = true;
         this.transform.parent.transform.parent.gameObject.SetActive(false);
     }
+
 }

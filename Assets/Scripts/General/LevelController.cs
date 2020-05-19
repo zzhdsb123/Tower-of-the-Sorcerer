@@ -7,9 +7,10 @@ public class LevelController : MonoBehaviour
     public GameObject currentLevel;
     public GameObject player;
     public GameObject stairs;
+    GameObject targetLevel;
     // Start is called before the first frame update
     // Update is called once per frame
-    
+
     public void NextLevel()
     {
         stairs.GetComponent<LevelAnimation>().ChangeLevel();
@@ -44,6 +45,24 @@ public class LevelController : MonoBehaviour
         prevLevel.SetActive(true);
         currentLevel = prevLevel;
         player.transform.position = currentLevel.GetComponent<Level>().positionFromAbove.position;
+        player.GetComponent<Player>().ResetAnimation();
+        FindObjectOfType<PlayerMove>().enabled = true;
+    }
+
+    public void Jump(GameObject level)
+    {
+        targetLevel = level;
+        stairs.GetComponent<LevelAnimation>().ChangeLevel();
+        FindObjectOfType<PlayerMove>().enabled = false;
+        Invoke("FloorJumpHelper", 0.5f);
+    }
+
+    void FloorJumpHelper()
+    {
+        currentLevel.SetActive(false);
+        targetLevel.SetActive(true);
+        currentLevel = targetLevel;
+        player.transform.position = currentLevel.GetComponent<Level>().positionFromBelow.position;
         player.GetComponent<Player>().ResetAnimation();
         FindObjectOfType<PlayerMove>().enabled = true;
     }
