@@ -17,7 +17,7 @@ public class FloorJumpUI : ShopGeneral, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (floor.GetComponent<Level>().visited || true)
+        if (floor.GetComponent<Level>().visited)
         {
             FindObjectOfType<LevelController>().Jump(floor);
             this.transform.parent.transform.parent.gameObject.SetActive(false);
