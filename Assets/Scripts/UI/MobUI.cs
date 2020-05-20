@@ -11,10 +11,15 @@ public class MobUI : MonoBehaviour
     // Start is called before the first frame update
     public void PlaceMobIcon(GameObject mob)
     {
-        monster = Instantiate(mob, mobTransform.position, Quaternion.identity);
+        monster = Instantiate(mob, mobTransform.position, Quaternion.identity);        
         Vector3 newScale = monster.transform.localScale;
         newScale.x *= 2;
         newScale.y *= 2;
+        if (mob.gameObject.name == "dragon")
+        {
+            newScale.x /= 3;
+            newScale.y /= 3;
+        }
         monster.transform.localScale = newScale;
         healthText.text = "Health";
         attackText.text = "Attack";

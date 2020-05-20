@@ -47,6 +47,14 @@ public class ShowMobDic : MonoBehaviour
             foreach (GameObject mob in mobsToShow)
             {
                 GameObject currentMob = Instantiate(mob, currentMobPos, Quaternion.identity);
+                if (mob.gameObject.name == "dragon")
+                {
+                    Vector3 newScale = currentMob.transform.localScale;
+                    newScale.x /= 3;
+                    newScale.y /= 3;
+                    newScale.z /= 3;
+                    currentMob.transform.localScale = newScale;
+                }
                 currentMob.transform.SetParent(mobDicUI.transform);
                 mobsOnScreen.Add(currentMob);
                 currentMobPos.y -= 0.32f;
