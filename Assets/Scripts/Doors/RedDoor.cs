@@ -20,6 +20,7 @@ public class RedDoor : MonoBehaviour, Objects
     {
         Animator animator = this.GetComponent<Animator>();
         animator.SetTrigger("open");
+        FindObjectOfType<DoorOpenAuio>().OpenDoor();
     }
 
     public void DestroyDoor()

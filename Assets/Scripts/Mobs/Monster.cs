@@ -46,6 +46,7 @@ public class Monster : MonoBehaviour
             player.UpdateStats();
             Invoke("DeleteAnimation", 0.15f);
             Invoke("Fight", timeBetweenAttack);
+            FindObjectOfType<DoorOpenAuio>().MobPunch();
         }
         else
         {
@@ -56,6 +57,7 @@ public class Monster : MonoBehaviour
             }
             if (attackTurn)
             {
+                FindObjectOfType<DoorOpenAuio>().PlayerPunch();
                 mobCombat = Instantiate(combatAnimation, transform.position, Quaternion.identity);
                 if (player.attack - defence > 0)
                 {
@@ -69,6 +71,7 @@ public class Monster : MonoBehaviour
             }
             else
             {
+                FindObjectOfType<DoorOpenAuio>().PlayerPunch();
                 playerCombat = Instantiate(combatAnimation, player.gameObject.transform.position, Quaternion.identity);
                 if (attack - player.defence > 0)
                 {

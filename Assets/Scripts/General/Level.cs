@@ -9,6 +9,7 @@ public class Level : MonoBehaviour
     public Transform positionFromBelow = null;
     public Transform positionFromAbove = null;
     public bool visited = false;
+    public int floorInt;
 
     // Update is called once per frame
     void Update()

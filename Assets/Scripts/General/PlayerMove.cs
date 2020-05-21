@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
     public Player player;
     public Animator animator;
     public bool mobDictionary = false;
+    public AudioSource audioSource;
     
     // Start is called before the first frame update
     void Update()
@@ -16,18 +17,22 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             Move(KeyCode.LeftArrow);
+            
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             Move(KeyCode.RightArrow);
+
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Move(KeyCode.UpArrow);
+
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Move(KeyCode.DownArrow);
+
         }
     }
 
@@ -72,6 +77,7 @@ public class PlayerMove : MonoBehaviour
                 }
                 break;
         }
+        
     }
 
     bool CheckNearObjects(KeyCode keyCode)
@@ -103,10 +109,13 @@ public class PlayerMove : MonoBehaviour
             {
                 target.GetComponent<Monster>().Trigger();
             }
+            
             return true;
+            
         }
         else
         {
+            audioSource.Play();
             return false;
         }
     }
