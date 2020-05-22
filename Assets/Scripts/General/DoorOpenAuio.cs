@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class DoorOpenAuio : MonoBehaviour
 {
-    public AudioSource audioSource, playerPunch, mobPunch, floorMusic1, floorMusic2, floorMusic3, stairs, itemSound;
+    public AudioSource audioSource, playerPunch, mobPunch, floorMusic1, floorMusic2, floorMusic3, stairs, itemSound, hover;
 
+    public void HoverSound()
+    {
+        hover.Play();
+    }
     public void PickUpItem()
     {
         itemSound.Play();

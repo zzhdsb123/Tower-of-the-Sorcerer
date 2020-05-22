@@ -8,6 +8,7 @@ public class ShopGeneral : MonoBehaviour
     public void OnHover()
     {
         this.gameObject.GetComponent<UnityEngine.UI.Text>().fontSize += 6;
+        FindObjectOfType<DoorOpenAuio>().HoverSound();
     }
 
     public void OffHover()
