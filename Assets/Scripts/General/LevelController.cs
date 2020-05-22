@@ -83,6 +83,7 @@ public class LevelController : MonoBehaviour
         player.GetComponent<Player>().ResetAnimation();
         FindObjectOfType<PlayerMove>().enabled = true;
         position = null;
+        FindObjectOfType<PlayerMove>().ResetTimeBetweenMove();
     }
 
     public void PreviousLevel()
@@ -106,6 +107,7 @@ public class LevelController : MonoBehaviour
         player.GetComponent<Player>().ResetAnimation();
         FindObjectOfType<PlayerMove>().enabled = true;
         position = null;
+        FindObjectOfType<PlayerMove>().ResetTimeBetweenMove();
     }
 
     public void Jump(GameObject level, Transform positionIn = null)
@@ -139,5 +141,6 @@ public class LevelController : MonoBehaviour
         position = null;
         player.GetComponent<Player>().ResetAnimation();
         FindObjectOfType<PlayerMove>().enabled = true;
+        FindObjectOfType<PlayerMove>().ResetTimeBetweenMove();
     }
 }

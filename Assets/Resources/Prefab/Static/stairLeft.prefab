@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2963198333633139597}
   - component: {fileID: 4156908600772624750}
   m_Layer: 8
-  m_Name: stairsUp 1
+  m_Name: stairLeft
   m_TagString: Objects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 1420831269
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6634475657970362737, guid: 8a5a3b790c7153847bf9c92c10fd4dd8,
+  m_Sprite: {fileID: -2262916373645062450, guid: e9836f5c55b9bec41898559089db10a8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19a13ac5864b1a43bee71fdf1cd507c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: {fileID: 0}

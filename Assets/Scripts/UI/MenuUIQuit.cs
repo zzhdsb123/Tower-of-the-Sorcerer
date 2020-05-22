@@ -18,4 +18,9 @@ public class MenuUIQuit : ShopGeneral, IPointerEnterHandler, IPointerExitHandler
     {
         OffHover();
     }
+
+    public void LoadNextText()
+    {
+
+    }
 }
