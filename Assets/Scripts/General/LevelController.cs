@@ -20,9 +20,60 @@ public class LevelController : MonoBehaviour
 
     }
 
+    void ChangeMusic(int currentLevel, int nextLevel)
+    {
+        if (currentLevel >= 0 && currentLevel < 8)
+        {
+            if (nextLevel >= 0 && nextLevel < 8)
+            {
+
+            }
+            else if (nextLevel < 16)
+            {
+                FindObjectOfType<DoorOpenAuio>().PlaySong2();
+            }
+            else
+            {
+                FindObjectOfType<DoorOpenAuio>().PlaySong3();
+            }
+        }
+        else if (currentLevel < 16)
+        {
+            if (nextLevel >= 0 && nextLevel < 8)
+            {
+                FindObjectOfType<DoorOpenAuio>().PlaySong1();
+            }
+            else if (nextLevel < 16)
+            {
+            }
+            else
+            {
+                FindObjectOfType<DoorOpenAuio>().PlaySong3();
+            }
+        }
+        else
+        {
+            if (nextLevel >= 0 && nextLevel < 8)
+            {
+                FindObjectOfType<DoorOpenAuio>().PlaySong1();
+            }
+            else if (nextLevel < 16)
+            {
+                FindObjectOfType<DoorOpenAuio>().PlaySong2();
+            }
+            else
+            {
+                
+            }
+        }
+    }
+
     void NextLevelHelper()
     {
         GameObject nextLevel = currentLevel.GetComponent<Level>().nextLevel;
+
+        ChangeMusic(currentLevel.GetComponent<Level>().floorInt, nextLevel.GetComponent<Level>().floorInt);
+
         currentLevel.SetActive(false);
         nextLevel.SetActive(true);
         currentLevel = nextLevel;
@@ -43,6 +94,9 @@ public class LevelController : MonoBehaviour
     void PreviousLevelHelper()
     {
         GameObject prevLevel = currentLevel.GetComponent<Level>().prevousLevel;
+
+        ChangeMusic(currentLevel.GetComponent<Level>().floorInt, prevLevel.GetComponent<Level>().floorInt);
+
         currentLevel.SetActive(false);
         prevLevel.SetActive(true);
         currentLevel = prevLevel;
@@ -55,6 +109,7 @@ public class LevelController : MonoBehaviour
     public void Jump(GameObject level, Transform positionIn = null)
     {
         targetLevel = level;
+        
         stairs.GetComponent<LevelAnimation>().ChangeLevel();
         FindObjectOfType<PlayerMove>().enabled = false;
         if (positionIn != null)
@@ -68,6 +123,7 @@ public class LevelController : MonoBehaviour
     {
         currentLevel.SetActive(false);
         targetLevel.SetActive(true);
+        ChangeMusic(currentLevel.GetComponent<Level>().floorInt, targetLevel.GetComponent<Level>().floorInt);
         currentLevel = targetLevel;
         
         if (position != null)
