@@ -13,6 +13,7 @@ public class LevelUpFeather : MonoBehaviour, Objects
         player.defence += 7;
         player.UpdateLevel();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

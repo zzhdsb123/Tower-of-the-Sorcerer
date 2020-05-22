@@ -10,6 +10,7 @@ public class HolyShield : MonoBehaviour, Objects
         player.defence += 190;
         player.UpdateDefence();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 

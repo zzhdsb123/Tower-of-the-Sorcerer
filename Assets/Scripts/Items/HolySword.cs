@@ -10,6 +10,7 @@ public class HolySword : MonoBehaviour,  Objects
         player.attack += 150;
         player.UpdateAttack();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

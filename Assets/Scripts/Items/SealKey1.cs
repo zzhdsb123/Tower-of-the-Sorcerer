@@ -10,5 +10,6 @@ public class SealKey1 : Monster
         FindObjectOfType<PlayerMove>().enabled = false;
         canvas.gameObject.SetActive(true);
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }

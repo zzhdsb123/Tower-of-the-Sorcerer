@@ -12,6 +12,7 @@ public class Level9Sword : MonoBehaviour, Objects
         player.attack += 70;
         player.UpdateAttack();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
     // Update is called once per frame

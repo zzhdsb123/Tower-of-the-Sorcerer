@@ -10,6 +10,7 @@ public class DivineWater : MonoBehaviour, Objects
         player.health += player.health;
         player.UpdateHealth();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

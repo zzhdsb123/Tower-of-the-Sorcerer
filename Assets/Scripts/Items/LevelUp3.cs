@@ -13,6 +13,7 @@ public class LevelUp3 : MonoBehaviour, Objects
         player.defence += 21;
         player.UpdateLevel();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

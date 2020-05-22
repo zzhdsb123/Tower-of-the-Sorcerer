@@ -10,5 +10,6 @@ public class DefenceGem : MonoBehaviour, Objects
         player.defence += 3;
         player.UpdateDefence();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }

@@ -10,6 +10,7 @@ public class Sheld11Floor : MonoBehaviour, Objects
         player.defence += 85;
         player.UpdateAttack();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

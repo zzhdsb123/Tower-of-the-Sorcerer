@@ -10,5 +10,6 @@ public class RedHealth : MonoBehaviour, Objects
         player.health += 200;
         player.UpdateHealth();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }

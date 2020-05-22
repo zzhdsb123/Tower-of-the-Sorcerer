@@ -8,6 +8,7 @@ public class RedKey : MonoBehaviour, Objects
         player.redKey += 1;
         player.UpdateRedKey();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

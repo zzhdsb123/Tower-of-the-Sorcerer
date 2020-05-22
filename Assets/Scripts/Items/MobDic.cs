@@ -9,6 +9,7 @@ public class MobDic : MonoBehaviour, Objects
         ShowMobDic showMobDic = FindObjectOfType<ShowMobDic>();
         showMobDic.haveMobDic = true;
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 

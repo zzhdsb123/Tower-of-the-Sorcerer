@@ -8,5 +8,6 @@ public class BlueKey : MonoBehaviour, Objects
         player.blueKey += 1;
         player.UpdateBlueKey();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }

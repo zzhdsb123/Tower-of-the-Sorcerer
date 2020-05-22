@@ -12,6 +12,7 @@ public class SealKey2 : MonoBehaviour, Objects
         FindObjectOfType<PlayerMove>().enabled = false;
         this.gameObject.SetActive(false);
         FindObjectOfType<KeyItems>().sealKey2 = true;
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
     // Start is called before the first frame update

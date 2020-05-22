@@ -10,5 +10,6 @@ public class MagicSnowFlake : Monster
         canvas.gameObject.SetActive(true);
         FindObjectOfType<KeyItems>().floowJump = true;
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }

@@ -9,5 +9,6 @@ public class YellowKey : MonoBehaviour, Objects
         player.yellowKey += 1;
         player.UpdateYellowKey();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }

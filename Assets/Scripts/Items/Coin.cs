@@ -10,6 +10,7 @@ public class Coin : MonoBehaviour, Objects
         player.gold += 300;
         player.UpdateGold();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

@@ -14,6 +14,7 @@ public class MasterKey : MonoBehaviour, Objects
         player.UpdateRedKey();
         player.UpdateYellowKey();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

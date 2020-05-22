@@ -11,5 +11,6 @@ public class IronSword : MonoBehaviour, Objects
         player.attack += 10;
         player.UpdateAttack();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }

@@ -9,6 +9,7 @@ public class FloorTool : Monster
         FindObjectOfType<KeyItems>().floorTool = true;
         canvas.gameObject.SetActive(true);
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

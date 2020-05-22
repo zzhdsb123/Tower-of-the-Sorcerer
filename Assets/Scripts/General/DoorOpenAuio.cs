@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class DoorOpenAuio : MonoBehaviour
 {
-    public AudioSource audioSource, playerPunch, mobPunch, floorMusic1, floorMusic2, floorMusic3;
+    public AudioSource audioSource, playerPunch, mobPunch, floorMusic1, floorMusic2, floorMusic3, stairs, itemSound;
+
+    public void PickUpItem()
+    {
+        itemSound.Play();
+    }
     // Start is called before the first frame update
     public void OpenDoor()
     {
@@ -39,5 +44,10 @@ public class DoorOpenAuio : MonoBehaviour
         floorMusic1.Stop();
         floorMusic2.Stop();
         floorMusic3.Play();
+    }
+
+    public void PlayStairs()
+    {
+        stairs.Play();
     }
 }

@@ -17,6 +17,7 @@ public class LevelController : MonoBehaviour
         stairs.GetComponent<LevelAnimation>().ChangeLevel();
         FindObjectOfType<PlayerMove>().enabled = false;
         Invoke("NextLevelHelper", 0.5f);
+        FindObjectOfType<DoorOpenAuio>().PlayStairs();
 
     }
 
@@ -89,6 +90,7 @@ public class LevelController : MonoBehaviour
         stairs.GetComponent<LevelAnimation>().ChangeLevel();
         FindObjectOfType<PlayerMove>().enabled = false;
         Invoke("PreviousLevelHelper", 0.5f);
+        FindObjectOfType<DoorOpenAuio>().PlayStairs();
     }
 
     void PreviousLevelHelper()

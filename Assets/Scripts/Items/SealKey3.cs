@@ -11,6 +11,7 @@ public class SealKey3 : MonoBehaviour, Objects
         FindObjectOfType<PlayerMove>().enabled = false;
         this.gameObject.SetActive(false);
         FindObjectOfType<KeyItems>().sealKey3 = true;
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

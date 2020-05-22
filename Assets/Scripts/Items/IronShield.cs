@@ -10,6 +10,7 @@ public class IronShield : MonoBehaviour, Objects
         player.defence += 10;
         player.UpdateDefence();
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 
 }

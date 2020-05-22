@@ -12,5 +12,6 @@ public class Cross : Monster
         FindObjectOfType<PlayerMove>().enabled = false;
         FindObjectOfType<KeyItems>().cross = true;
         this.gameObject.SetActive(false);
+        FindObjectOfType<DoorOpenAuio>().PickUpItem();
     }
 }
