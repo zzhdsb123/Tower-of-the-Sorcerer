@@ -128,5 +128,6 @@ public class Monster : MonoBehaviour
         player.exp += exp;
         player.UpdateExp();
         player.UpdateGold();
+        FindObjectOfType<PlayerMove>().ResetTimeBetweenMove();
     }
 }

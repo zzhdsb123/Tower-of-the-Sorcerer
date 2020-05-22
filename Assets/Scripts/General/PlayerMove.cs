@@ -10,29 +10,115 @@ public class PlayerMove : MonoBehaviour
     public Animator animator;
     public bool mobDictionary = false;
     public AudioSource audioSource;
-    
+
+    float timeBetweenMoveStatic = 0.2f;
+    float timeBetweenMove;
+
+    public void ResetTimeBetweenMove()
+    {
+        timeBetweenMove = timeBetweenMoveStatic;
+    }
+
+    private void Start()
+    {
+        timeBetweenMove = timeBetweenMoveStatic;
+    }
+
     // Start is called before the first frame update
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            Move(KeyCode.LeftArrow);
+            if (timeBetweenMove == timeBetweenMoveStatic)
+            {
+                Move(KeyCode.LeftArrow);
+                timeBetweenMove -= Time.deltaTime;
+            }
+            else if (timeBetweenMove <= 0f)
+            {
+                Move(KeyCode.LeftArrow);
+                timeBetweenMove = timeBetweenMoveStatic - Time.deltaTime;
+            }
+            else
+            {
+                timeBetweenMove -= Time.deltaTime;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            timeBetweenMove = timeBetweenMoveStatic;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            if (timeBetweenMove == timeBetweenMoveStatic)
+            {
+                Move(KeyCode.RightArrow);
+                timeBetweenMove -= Time.deltaTime;
+            }
+            else if (timeBetweenMove <= 0f)
+            {
+                Move(KeyCode.RightArrow);
+                timeBetweenMove = timeBetweenMoveStatic - Time.deltaTime;
+            }
+            else
+            {
+                timeBetweenMove -= Time.deltaTime;
+            }   
+        }
+
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            timeBetweenMove = timeBetweenMoveStatic;
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            if (timeBetweenMove == timeBetweenMoveStatic)
+            {
+                Move(KeyCode.UpArrow);
+                timeBetweenMove -= Time.deltaTime;
+            }
+            else if (timeBetweenMove <= 0f)
+            {
+                Move(KeyCode.UpArrow);
+                timeBetweenMove = timeBetweenMoveStatic - Time.deltaTime;
+            }
+            else
+            {
+                timeBetweenMove -= Time.deltaTime;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            timeBetweenMove = timeBetweenMoveStatic;
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            if (timeBetweenMove == timeBetweenMoveStatic)
+            {
+                Move(KeyCode.DownArrow);
+                timeBetweenMove -= Time.deltaTime;
+            }
+            else if (timeBetweenMove <= 0f)
+            {
+                Move(KeyCode.DownArrow);
+                timeBetweenMove = timeBetweenMoveStatic - Time.deltaTime;
+            }
+            else
+            {
+                timeBetweenMove -= Time.deltaTime;
+            }
             
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            Move(KeyCode.RightArrow);
 
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            Move(KeyCode.UpArrow);
 
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyUp(KeyCode.DownArrow))
         {
-            Move(KeyCode.DownArrow);
-
+            timeBetweenMove = timeBetweenMoveStatic;
         }
     }
 
